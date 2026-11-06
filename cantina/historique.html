@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique des ventes 📊</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-historique">
+
+    <h2 class="titre">📊 Historique des ventes</h2>
+
+  <nav class="navigation">
+    <a href="index.html" class="nav-bouton">🛒 Caisse</a>
+    <a href="historique.html" class="nav-bouton">📊 Historique</a>
+  </nav>
+
+    <section class="total-ventes">
+
+    <h2>💰 Total des ventes</h2>
+
+    <p id="totalVentes">0,00 $</p>
+
+</section>
+
+<main class="historique">
+
+        <section class="carte-historique">
+            <h3>🍺 Bières</h3>
+            <div id="historiqueBieres"></div>
+        </section>
+
+        <section class="carte-historique">
+            <h3>🥤 Boissons</h3>
+            <div id="historiqueBoissons"></div>
+        </section>
+
+        <section class="carte-historique">
+            <h3>🍫 Snacks</h3>
+            <div id="historiqueSnacks"></div>
+        </section>
+
+        <section class="carte-historique">
+            <h3>🌭 Repas</h3>
+            <div id="historiqueRepas"></div>
+        </section>
+
+    </main>
+
+    <button id="resetStats">
+    🗑️ Réinitialiser les statistiques
+    </button>
+
+    <script src="historique.js"></script>
+
+</body>
+</html>

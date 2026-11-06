@@ -1,0 +1,119 @@
+<!--
+Page principale de la caisse.
+
+À faire :
+- Ajouter les boutons des produits.
+- Afficher la commande en temps réel.
+- Calculer le total.
+- Ajouter le paiement.
+
+mettre localStorage.clear() + enter dans la console pour réinitialiser
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caisse perso ⛳</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-caisse">
+<h2 class="titre">Benos dias 👑 lock in para los propinas </h2>
+  <nav class="navigation">
+    <a href="index.html" class="nav-bouton">🛒 Caisse</a>
+    <a href="historique.html" class="nav-bouton">📊 Historique</a>
+  </nav>
+
+ <div class="container">
+
+    <aside class="commande">
+            <h2>📄 Commande</h2>
+
+                <div class="liste-commande" id="listeCommande"></div>
+
+            <p id="total">Total : 0,00 $</p>
+        <div class="actions">
+            <button id="annulerDernier">Annuler dernier item</button>
+            <button>???</button>
+            <button id="nouvelleCommande">Nouvelle commande</button>
+        </div>    
+        
+        </aside>
+
+        <main class="produits">
+
+            <section class="categorie">
+                <h2>🍺 Bières</h2>
+
+            <div class="liste-produits">
+                <button class="produit" data-prix="8" data-categorie="bieres">Heineken 0%</button>
+                <button class="produit" data-prix="9" data-categorie="bieres">Smirnoff ICE</button>
+                <button class="produit" data-prix="9" data-categorie="bieres">Molson</button>
+                <button class="produit" data-prix="9" data-categorie="bieres">Coors</button>
+                <button class="produit" data-prix="9" data-categorie="bieres">Miller Lite</button>
+                <button class="produit" data-prix="9" data-categorie="bieres">Simply limonade</button>
+                <button class="produit" data-prix="10" data-categorie="bieres">Blue Moon</button>
+                <button class="produit" data-prix="10" data-categorie="bieres">Griffin Town</button>
+                <button class="produit" data-prix="10" data-categorie="bieres">IPA Amer</button>
+                <button class="produit" data-prix="10" data-categorie="bieres">Petite Bourgogne</button>
+                <button class="produit" data-prix="12" data-categorie="bieres">Clamato</button>
+                <button class="produit" data-prix="12" data-categorie="bieres">Heineken</button>
+            </div>
+
+            </section>
+
+            <section class="categorie">
+                <h2>🍹 Boissons</h2>
+            
+            <div class="liste-produits">
+                <button class="produit" data-prix="5" data-categorie="boissons">Pepsi</button>
+                <button class="produit" data-prix="5" data-categorie="boissons">7 Up</button>
+                <button class="produit" data-prix="5" data-categorie="boissons">Brisk thé/limonade</button>
+                <button class="produit" data-prix="5" data-categorie="boissons">Jus pomme/orange</button>
+                <button class="produit" data-prix="5" data-categorie="boissons">V8</button>
+                <button class="produit" data-prix="5" data-categorie="boissons">Gatorade</button>
+                <button class="produit" data-prix="4" data-categorie="boissons">Montellier</button>
+                <button class="produit" data-prix="3.5" data-categorie="boissons">Café</button>
+                <button class="produit" data-prix="3" data-categorie="boissons">Eau Aquafina</button>
+            </div>
+            
+            </section>
+
+            <section class="categorie">
+                <h2>🍪 Collations</h2>
+
+            <div class="liste-produits">
+                <button class="produit" data-prix="3" data-categorie="snacks">Biscuit</button>
+                <button class="produit" data-prix="3" data-categorie="snacks">Chips</button>
+                <button class="produit" data-prix="3" data-categorie="snacks">Muffin</button>
+                <button class="produit" data-prix="4" data-categorie="snacks">Carré framboise</button>
+                <button class="produit" data-prix="4" data-categorie="snacks">Chocolat</button>
+                <button class="produit" data-prix="4" data-categorie="snacks">Arachides</button>
+            </div>
+            
+            </section>
+
+            <section class="categorie">
+                <h2>🌭 Repas</h2>
+
+            <div class="liste-produits">
+                <button class="produit" data-prix="4.5" data-categorie="repas">Hot-dog</button>
+                <button class="produit" data-prix="9" data-categorie="repas">Sandwich jambon</button>
+                <button class="produit" data-prix="9" data-categorie="repas">Sandwich oeuf</button>
+                <button class="produit" data-prix="9" data-categorie="repas">Sandwich poulet</button>
+                <button class="produit" data-prix="13" data-categorie="repas">Wrap poulet-cajun</button>
+                <button class="produit" data-prix="13" data-categorie="repas">Wrap jambon-fromage</button>
+            </div>
+            
+            </section>
+
+        </main>
+
+
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
